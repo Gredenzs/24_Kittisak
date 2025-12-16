@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#9AD16C">
+
+    <!-- Product Name -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_product"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_green"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/edittext_background"
+        android:importantForAutofill="no"
+        android:inputType=""
+        android:padding="12dp"
+        android:hint="@string/name_product"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Product Price -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_green"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/et_edit_price"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/edittext_background"
+        android:importantForAutofill="no"
+        android:padding="12dp"
+        android:hint="@string/add_price"
+        android:inputType="numberDecimal"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Product Quantity -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amount"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_green"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/et_edit_amount"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/edittext_background"
+        android:importantForAutofill="no"
+        android:padding="12dp"
+        android:hint="@string/amount"
+        android:inputType="number"
+        android:textSize="14sp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:backgroundTint="@color/light_green"
+            android:textColor="@color/dark_green"
+            android:layout_marginEnd="12dp"
+            android:paddingHorizontal="24dp"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:backgroundTint="@color/medium_green"
+            android:textColor="@android:color/white"
+            android:paddingHorizontal="24dp"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+</LinearLayout>

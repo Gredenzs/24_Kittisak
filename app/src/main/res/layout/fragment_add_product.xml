@@ -1,18 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".fragments.AddProductFragment"
-    android:background="#FFC107">
+    android:background="@color/cream_background">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <!-- Header -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/addproduct"
-        android:textSize="24sp"
-        android:gravity="center"
-        android:textColor="@color/black"/>
+        android:layout_height="wrap_content"
+        android:background="@color/medium_green"
+        android:padding="16dp"
+        android:gravity="center">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_product"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <!-- Add Product Form -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Product Image Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="24dp">
+
+
+
+                <ImageView
+                    android:id="@+id/iv_product_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/product"
+                    android:background="@drawable/btn_menu_inactive"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="12dp" />
+
+                <Button
+                    android:id="@+id/btn_select_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/picture"
+                    android:backgroundTint="@color/light_green"
+                    android:textColor="@color/black"
+                    android:padding="12dp" />
+
+            </LinearLayout>
+
+            <!-- Product Name -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_product"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_green"
+                    android:layout_marginBottom="8dp" />
+
+                <EditText
+                    android:id="@+id/add_product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext_background"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:hint="@string/add_name_product"
+                    android:textColorHint="@color/medium_green"
+                    android:textColor="@color/dark_green"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <!-- Product Price -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_green"
+                    android:layout_marginBottom="8dp" />
+
+                <EditText
+                    android:id="@+id/add_product_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext_background"
+                    android:importantForAutofill="no"
+                    android:padding="12dp"
+                    android:hint="@string/add_price"
+                    android:textColorHint="@color/medium_green"
+                    android:textColor="@color/dark_green"
+                    android:inputType="numberDecimal"
+                    android:textSize="16sp" />
+
+            </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amount"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/dark_green"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/add_product_amount"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_background"
+                android:importantForAutofill="no"
+                android:padding="12dp"
+                android:hint="@string/amount"
+                android:textColorHint="@color/medium_green"
+                android:textColor="@color/dark_green"
+                android:inputType="numberDecimal"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+            <!-- Save Button -->
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/save"
+                android:backgroundTint="@color/medium_green"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

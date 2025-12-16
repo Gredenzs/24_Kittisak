@@ -11,13 +11,6 @@
     <item
         android:id="@+id/addProductFragment"
         android:icon="@drawable/ic_add"
-        android:title="@string/Addproduct"/>
-    <item
-        android:id="@+id/notificationFragment"
-        android:icon="@drawable/ic_notification"
-        android:title="@string/Notification"/>
-    <item
-        android:id="@+id/accountFragment"
-        android:icon="@drawable/ic_account"
-        android:title="@string/Account"/>
+        android:title="@string/add_product"/>
+
 </menu>

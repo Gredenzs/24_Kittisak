@@ -4,16 +4,4 @@
             android:id="@+id/aboutFragment"
             android:icon="@drawable/ic_about"
             android:title="@string/About"/>
-    <item
-        android:id="@+id/serviceFragment"
-        android:icon="@drawable/ic_service"
-        android:title="@string/Service"/>
-    <item
-        android:id="@+id/settingFragment"
-        android:icon="@drawable/ic_setting"
-        android:title="@string/Setting"/>
-    <item
-        android:id="@+id/nav_signout"
-        android:icon="@drawable/ic_signout"
-        android:title="@string/Signout"/>
 </menu>

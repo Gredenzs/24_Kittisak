@@ -20,29 +20,17 @@
         android:name="com.kittisak.pscmenu.fragments.ProductFragment"
         android:label="หน้าสินค้า"
         tools:layout="@layout/fragment_product" />
-    <fragment
-        android:id="@+id/accountFragment"
-        android:name="com.kittisak.pscmenu.fragments.AccountFragment"
-        android:label="บัญชีของฉัน"
-        tools:layout="@layout/fragment_account" />
+
     <fragment
         android:id="@+id/addProductFragment"
         android:name="com.kittisak.pscmenu.fragments.AddProductFragment"
         android:label="เพิ่มสินค้า"
         tools:layout="@layout/fragment_add_product" />
     <fragment
-        android:id="@+id/notificationFragment"
-        android:name="com.kittisak.pscmenu.fragments.NotificationFragment"
-        android:label="หน้าแจ้งเตือน"
-        tools:layout="@layout/fragment_notification" />
-    <fragment
-        android:id="@+id/serviceFragment"
-        android:name="com.kittisak.pscmenu.fragments.ServiceFragment"
-        android:label="หน้าบริการ"
-        tools:layout="@layout/fragment_service" />
-    <fragment
-        android:id="@+id/settingFragment"
-        android:name="com.kittisak.pscmenu.fragments.SettingFragment"
-        android:label="หน้าตั้งค่า"
-        tools:layout="@layout/fragment_setting" />
+        android:id="@+id/editFragment"
+        android:name="com.kittisak.pscmenu.fragments.EditFragment"
+        android:label="แก้ไขสินค้า"
+        tools:layout="@layout/fragment_edit" />
+
+
 </navigation>

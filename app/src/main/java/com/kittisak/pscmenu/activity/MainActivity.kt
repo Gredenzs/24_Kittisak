@@ -5,6 +5,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.ViewCompat
+import androidx.core.view.WindowCompat.enableEdgeToEdge
 import androidx.core.view.WindowInsetsCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
@@ -50,9 +51,7 @@ class MainActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration.Builder(
             R.id.homeFragment,
             R.id.productFragment,
-            R.id.addProductFragment,
-            R.id.notificationFragment,
-            R.id.accountFragment
+            R.id.addProductFragment
         ).setOpenableLayout(mainDrawerLayout).build()
 
         setSupportActionBar(mainToolbar)
