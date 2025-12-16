@@ -46,16 +46,15 @@
                 android:layout_marginBottom="24dp">
 
 
-
                 <ImageView
-                    android:id="@+id/iv_product_image"
+                    android:id="@+id/image"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:importantForAccessibility="no"
-                    android:src="@drawable/product"
+                    android:layout_marginBottom="12dp"
                     android:background="@drawable/btn_menu_inactive"
+                    android:importantForAccessibility="no"
                     android:scaleType="centerCrop"
-                    android:layout_marginBottom="12dp" />
+                    android:src="@drawable/product" />
 
                 <Button
                     android:id="@+id/btn_select_image"
